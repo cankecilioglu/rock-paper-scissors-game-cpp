@@ -1,37 +1,50 @@
-# 🎮 Rock Paper Scissors Game
+# 🎮 Rock Paper Scissors (C++)
 
-Klasik Taş-Kağıt-Makas oyununun modern ve görsel olarak zengin C++ konsol uygulaması.
+A modern, colorful, and emoji-powered console version of the classic **Rock – Paper – Scissors** game written in C++.
 
-## ✨ Özellikler
+---
 
-- 🎨 Renkli ve modern konsol arayüzü
-- 📊 Skor takibi
-- 🤖 Rastgele bilgisayar seçimleri
-- ✅ Gelişmiş hata kontrolü
-- 🎭 Emoji destekli görsel tasarım
+## ✨ Features
+- 🎨 Clean and visually appealing console UI
+- 📊 Real-time score tracking
+- 🤖 Randomized computer moves
+- ✅ Input validation and error handling
+- 🎭 Emoji-enhanced design for a fun experience
 
-## 🛠️ Gereksinimler
+---
 
-- C++11 veya üzeri
-- g++ derleyici (veya başka bir C++ derleyici)
-- Terminal/Konsol desteği
+## 🛠️ Requirements
+- **C++17** or later
+- **g++** or any compatible C++ compiler
+- Terminal / Console environment
 
-## 📦 Derleme ve Çalıştırma
+---
 
-### g++ ile Derleme (Mac/Linux)
+## 🚀 Build & Run
+
+### 🐧 Mac / Linux
 ```bash
-g++ -std=c++11 src/main.cpp -o rock-paper-scissors
-./rock-paper-scissors
+make run
+# or
+g++ -std=c++17 src/main.cpp -o rock-paper-scissors
+./rock-paper-scissors 
+```
 
-###Windows (MinGW)
+### 🪟 Windows (MinGW)
 
-g++ -std=c++11 src/main.cpp -o rock-paper-scissors.exe
-rock-paper-scissors.exe
+```bash
+g++ -std=c++17 src/main.cpp -o rock-paper-scissors.exe
+rock-paper-scissors.exe 
+```
 
-###CMake ile Derleme
+### ⚙️ Using CMake (All Platforms)
 
+```bash
 mkdir build
 cd build
 cmake ..
-make
-./rock-paper-scissors
+cmake --build .
+# Run the game
+./rock-paper-scissors   # Mac / Linux
+rock-paper-scissors.exe # Windows
+```
