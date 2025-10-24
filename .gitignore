@@ -1,0 +1,22 @@
+# Build outputs
+build/
+bin/
+*.o
+*.obj
+*.exe
+*.out
+*.log
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+Makefile
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/ipch/

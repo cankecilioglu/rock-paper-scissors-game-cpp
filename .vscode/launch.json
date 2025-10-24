@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug CMake build (lldb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/rock-paper-scissors",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "MIMode": "lldb",
+      "externalConsole": false,
+      "preLaunchTask": "CMake: Build"
+    },
+    {
+      "name": "Debug Make build (lldb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/rock-paper-scissors",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "MIMode": "lldb",
+      "externalConsole": false,
+      "preLaunchTask": "Make: Build"
+    }
+  ]
+}

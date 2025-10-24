@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CMake: Configure",
+      "type": "shell",
+      "command": "cmake -S . -B build -DCMAKE_CXX_STANDARD=17",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "CMake: Build",
+      "type": "shell",
+      "command": "cmake --build build --config Release",
+      "group": "build",
+      "dependsOn": "CMake: Configure",
+      "problemMatcher": []
+    },
+    {
+      "label": "Make: Build",
+      "type": "shell",
+      "command": "make",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run binary",
+      "type": "shell",
+      "command": "[ -x ./build/rock-paper-scissors ] && ./build/rock-paper-scissors || [ -x ./bin/rock-paper-scissors ] && ./bin/rock-paper-scissors || ./rock-paper-scissors",
+      "problemMatcher": []
+    }
+  ]
+}
